@@ -7,8 +7,10 @@ let userInput = prompt('What is your favorite color: ');
 console.log(`Great, ${userInput} is my favorite color too!`);
 
 let movieCost = 3.00;
-let rentalDays = prompt('How many days did you rent the movie ? ');
-let totalCost = movieCost * Number(rentalDays);
+let littleMermaidDaysRented = prompt("How many days di you rent Little Mermaid? ");
+let daysRentedBrotherBear = prompt("How many days did you rent Brother Bear? ");
+let daysRentedHercules = prompt("How many days did you rent Hercules? ");
+let totalCost = Number(littleMermaidDaysRented) * movieCost + Number(daysRentedBrotherBear) * movieCost + Number(daysRentedHercules) * movieCost;
 alert(`Your total cost of the rental is $${totalCost.toFixed(2)}.`);
 
 let googlePay = 400.00;
