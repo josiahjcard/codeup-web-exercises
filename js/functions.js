@@ -107,6 +107,7 @@ alert(calculateTip(Number(percentage), Number(billAmount)));
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
 
+
 function applyDiscount(price, discountPercentage) {
     let discountedPrice = price * discountPercentage;
     let finalCost = price - discountedPrice;
