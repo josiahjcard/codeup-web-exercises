@@ -7,7 +7,7 @@ do {
     } else {
         break;
     }
-} while (true)
+} while (true);
 
 console.log(`Number to skip is: ${numInput}`);
 for (let i = 0; i < 50; i++) {
