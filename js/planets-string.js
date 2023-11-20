@@ -28,7 +28,7 @@
     let planetsBreak = planetsArray.join('<br>');
     console.log(planetsBreak);
 
-    let planetsUnorderedList = `<ul>${planetsArray.join('<li>')}</ul>`;
+    let planetsUnorderedList = `<ul><li>${planetsArray.join('<li></li>')}</li></ul>`;
     console.log(planetsUnorderedList);
 
 
