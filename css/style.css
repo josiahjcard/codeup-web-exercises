@@ -1,4 +1,42 @@
 .fancy-header {
-    color: purple;
+    color: #9B2310;
     text-decoration: underline;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: #9B2310;
+}
+
+
+body {
+    /*background-color: #DAF9F3;*/
+    background-image: url("../img/bg_photo.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Hedvig Letters Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    list-style: circle;
+}
+
+
+th {
+    text-decoration: underline;
+    text-align: left;
+}
+
+.top-of-page:visited {
+    color: black;
+}
+.top-of-page:hover {
+    color: green;
+}
+td ,tr {
+    padding: 0;
+    text-align: left;
 }
