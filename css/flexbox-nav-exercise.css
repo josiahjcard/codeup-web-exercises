@@ -1,0 +1,37 @@
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+nav {
+    background: grey;
+    box-sizing: border-box;
+    align-content: space-between;
+
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+ li {
+     /*flex-basis: 5em;*/
+     padding: 1em;
+
+
+ }
+.jobs {
+    margin-right: auto;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial;
+    display: inline-block;
+}
+nav a:hover {
+    background: blue;
+}
