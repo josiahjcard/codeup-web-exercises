@@ -8,10 +8,19 @@ body {
     background-image: url("../img/pizza.png");
     height: 346px;
     background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+.heading-2 {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
 }
 
 
-
 /*.p3 {*/
-/*    width: 100%;*/
+/*    width: auto;*/
 /*}*/
