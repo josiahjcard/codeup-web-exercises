@@ -24,24 +24,10 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Menu</a>
                 </li>
-<!--                <li class="nav-item dropdown">-->
-<!--                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">-->
-<!--                        Link-->
-<!--                    </a>-->
-<!--                    <ul class="dropdown-menu">-->
-<!--                        <li><a class="dropdown-item" href="#">Action</a></li>-->
-<!--                        <li><a class="dropdown-item" href="#">Another action</a></li>-->
-<!--                        <li><hr class="dropdown-divider"></li>-->
-<!--                        <li><a class="dropdown-item" href="#">Something else here</a></li>-->
-<!--                    </ul>-->
-<!--                </li>-->
-<!--                <li class="nav-item">-->
-<!--                    <a class="nav-link disabled" aria-disabled="true">Link</a>-->
-<!--                </li>-->
             </ul>
-            <form class="d-flex" role="zipcode">
+            <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Zip Code" aria-label="zip-code">
-                <button class="btn btn-outline-success w-100" type="submit">Search stores near you!</button>
+                <button class="btn btn-outline-success w-100 border-primary link-primary text-primary" type="submit">Search stores near you!</button>
             </form>
         </div>
     </div>
@@ -90,8 +76,14 @@
                         </div>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">Garlic seasoned crust with a rich, buttery taste.</li>
-                            <li class="list-group-item">Small (10")</li>
-                            <li class="list-group-item">Medium (12")</li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="radio" name="hand-tossed" value="" aria-label="...">
+                                Small (10")
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="radio" name="hand-tossed" value="" aria-label="...">
+                                Medium (12")
+                            </li>
                         </ul>
                     </div>
                     <div class="card mt-4" style="width: auto;">
@@ -100,8 +92,14 @@
                         </div>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">Thin enough for optimum crispy to crunchy ratio.</li>
-                            <li class="list-group-item">Medium (12")</li>
-                            <li class="list-group-item">Large (14")</li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="radio" name="crispy-thin" value="" aria-label="...">
+                                Medium (12")
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="radio" name="crispy-thin" value="" aria-label="...">
+                                Large (14")
+                            </li>
                         </ul>
                     </div>
                     <div class="card-footer text-end">
@@ -137,7 +135,10 @@
                         </ul>
                     </div>
                     <div class="card-footer text-end">
-                        <a href="#" class="btn btn-primary text-end">< Previous Next > </a>
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-primary">< Previous</a>
+                            <a href="#" class="btn btn-primary">Next ></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -153,23 +154,47 @@
                         <div class="card-header">
                             Choose Meats
                         </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Beef</li>
-                            <li class="list-group-item">Ham</li>
-                            <li class="list-group-item">Philly Steak</li>
-                            <li class="list-group-item">Bacon</li>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                Beef
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                Ham
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                Philly Steak
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                Bacon
+                            </li>
                         </ul>
                     </div>
-                    <!-- Second card in the Choose Size and Crust Panel -->
+                    <!-- Third card in the Choose Toppings -->
                     <div class="card mt-4" style="width: auto;">
                         <div class="card-header">
                             Choose Non-Meats
                         </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Green Peppers</li>
-                            <li class="list-group-item">Mushrooms</li>
-                            <li class="list-group-item">Onions</li>
-                            <li class="list-group-item">Jalape&#241;o Peppers</li>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                Green Peppers
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                Mushrooms
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                Onions
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                Jalepe&#241;o Peppers
+                            </li>
                         </ul>
                     </div>
 
