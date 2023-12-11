@@ -67,7 +67,7 @@
         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
             <div class="card" style="width: auto;">
                 <div class="card-body mt-0 ">
-                    <div class="card-header">
+                    <div class="card-header card text-white bg-primary mb-3">
                         <h5 class="card-title">Choose Size and Crust</h5>
                     </div>
                     <div class="card mt-4" style="width: auto;">
@@ -108,31 +108,48 @@
                 </div>
             </div>
         </div>
+
+
         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
             <div class="card" style="width: auto;">
                 <div class="card-body mt-0 ">
-                    <div class="card-header">
+                    <div class="card-header card text-white bg-primary mb-3">
                         <h5 class="card-title">Choose Cheese and Sauce</h5>
                     </div>
                     <div class="card mt-4" style="width: auto;">
                         <div class="card-header">
                             Cheese
                         </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">How Much?</li>
-                            <li class="list-group-item">Normal</li>
-                        </ul>
+                        <div class="card-body">
+                            <label for="cheese-options">How Much?</label>
+                            <select class="form-select" name="cheese-options" id="cheese-options">
+                                <option value="light">Light</option>
+                                <option value="normal">Normal</option>
+                                <option value="extra">Extra</option>
+                                <option value="double">Double</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="card mt-4" style="width: auto;">
                         <div class="card-header">
                             Sauce
                         </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">What Type?</li>
-                            <li class="list-group-item">Tomato</li>
-                            <li class="list-group-item">How Much?</li>
-                            <li class="list-group-item">Normal</li>
-                        </ul>
+                        <div class="card-body">
+                            <label for="sauce-options">What Type?</label>
+                            <select class="form-select" name="sauce-options" id="sauce-options">
+                                <option value="tomato">Tomato</option>
+                                <option value="marinara">Marinara</option>
+                                <option value="bbq">BBQ</option>
+                                <option value="alfredo">Alfredo</option>
+                            </select>
+
+                            <label for="sauce-quantity">How Much?</label>
+                            <select class="form-select" name="sauce-quantity" id="sauce-quantity">
+                                <option value="sauce-light">Light</option>
+                                <option value="sauce-normal">Normal</option>
+                                <option value="sauce-extra">Extra</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="card-footer text-end">
                         <div class="btn-group">
@@ -143,10 +160,12 @@
                 </div>
             </div>
         </div>
+
+
         <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
             <div class="card" style="width: auto;">
                 <div class="card-body mt-0 ">
-                    <div class="card-header">
+                    <div class="card-header card text-white bg-primary mb-3">
                         <h5 class="card-title">Choose Toppings</h5>
                     </div>
 
@@ -173,6 +192,8 @@
                             </li>
                         </ul>
                     </div>
+
+
                     <!-- Third card in the Choose Toppings -->
                     <div class="card mt-4" style="width: auto;">
                         <div class="card-header">
