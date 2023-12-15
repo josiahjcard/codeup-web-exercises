@@ -24,50 +24,96 @@
     pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
     culpa qui officia deserunt mollit anim id est laborum.
 </p>
+
+<button id="btn1">Change Header</button>
+<button id="btn2">Change Color</button>
+<button id="btn3">Change List Item Color</button>
+<button id="btn4">Change Paragraph</button>
+
 <script>
         "use strict";
         // TODO: Uncomment next line and get the main header element by id
 
-        const mainHeader = document.querySelector('#main-header');
+        // const mainHeader = document.querySelector('#main-header');
 
         // TODO: Set inner html of mainHeader to "JavaScript is Cool"
 
-        mainHeader.innerHTML = "JavaScript is Cool";
+        // const newMainHeader = mainHeader.innerHTML = "JavaScript is Cool";
 
         // TODO: Uncomment the next line and get the sub header element by id
 
-        const subHeader = document.querySelector('#sub-header');
+        // const subHeader = document.querySelector('#sub-header');
 
         // TODO: Set the text color of subHeader to blue
 
-        subHeader.style.color = 'blue';
+        // subHeader.style.color = 'blue';
 
         // TODO: Uncomment the next line and get all list items
 
-        const listItems = document.querySelectorAll('li');
-        console.log(listItems);
+        // const listItems = document.querySelectorAll('li');
 
         // TODO: Set text color on every other list item to grey
 
-        listItems.forEach(function(item, index){
-            if(index % 2 === 0) {
-                item.style.color= 'grey';
-            }
-        });
+        // listItems.forEach(function(item, index){
+        //     if(index % 2 === 0) {
+        //         item.style.color= 'grey';
+        //     }
+        // });
 
         // TODO: Set text color of li with dbid = 1 to blue
 
-        const textColor = document.querySelector('li[data-dbid = "1"]');
-        textColor.style.color = 'blue';
+        // const textColor = document.querySelector('li[data-dbid = "1"]');
+        // textColor.style.color = 'blue';
 
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
 
-        const subParagraphs = document.querySelectorAll('.sub-paragraph');
-        console.log(subParagraphs);
+        // const subParagraphs = document.querySelectorAll('.sub-paragraph');
 
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
 
-        document.querySelector('.sub-paragraph').innerHTML = 'Mission Accomplished';
+        // document.querySelector('.sub-paragraph').innerHTML = 'Mission Accomplished';
+
+        // Grab elements and assign to constants
+        const button1 = document.querySelector("#btn1");
+        const button2 = document.querySelector("#btn2");
+        const button3 = document.querySelector("#btn3");
+        const button4 = document.querySelector("#btn4");
+
+
+        // Function to Change Header
+        function changeHeader() {
+            let newMainHeader;
+            let mainHeader = document.querySelector('#main-header');
+            return newMainHeader = mainHeader.innerHTML = "JavaScript is Cool";
+        }
+
+        // Function to change sub header text color
+        function changeColor() {
+            const subHeader = document.querySelector('#sub-header');
+            return subHeader.style.color = 'blue';
+        }
+
+        // Function to change every other list item to grey
+        function setColorOfList() {
+            const listItems = document.querySelectorAll('li');
+            listItems.forEach(function(item, index){
+                if(index % 2 === 0) {
+                    item.style.color= 'grey';
+                }
+            });
+        }
+
+        // Function to change paragraph
+        function changeParagraph() {
+            const subParagraph = document.querySelector('.sub-paragraph');
+            return subParagraph.innerHTML = 'Mission Accomplished';
+        }
+
+        // Add button events to run functions
+        button1.addEventListener('click', changeHeader);
+        button2.addEventListener('click', changeColor);
+        button3.addEventListener('click',setColorOfList);
+        button4.addEventListener('click', changeParagraph);
 
 </script>
 </body>
