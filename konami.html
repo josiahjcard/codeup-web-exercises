@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Konami Code</title>
+</head>
+<body>
+<h1>Konami Code</h1>
+
+<script>
+  "use strict";
+
+  document.addEventListener("keyup", event => console.log(event.key) );
+  const konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a', 'Enter'];
+  let index = 0;
+
+  document.addEventListener('keyup', (event) => {
+
+    if(event.key === konamiCode[index]) {
+
+      index++;
+
+      if(index === konamiCode.length) {
+        alert('You have added 30 lives');
+        index = 0;
+      }
+    } else {
+      index = 0;
+    }
+
+  });
+</script>
+</body>
+</html>
